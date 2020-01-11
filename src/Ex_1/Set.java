@@ -1,27 +1,19 @@
 package Ex_1;
 
 import java.util.Iterator;
+import java.util.SortedSet;
 import java.util.TreeSet;
 
-public class Set<T extends Number> {
+public class Set<T extends Comparable<T>> {
 
-    T sum(TreeSet<T> values) {
+    private SortedSet<T> set = new TreeSet<T>();
 
-        values = new TreeSet<>();
-        Iterator setIterator = values.iterator();
+    SortedSet<T> sum(SortedSet<T> set) {
 
-        while (setIterator.hasNext()) {
-           setIterator.next();
-
-        }
+        
 
 
-        return
+
+        return set;
     }
-
-
-
-
-
-
 }
